@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/submit_title"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/progressBar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:donut_text_color="@color/mainGreen"
+        app:donut_finished_color="@color/mainGreen"
+        app:donut_progress="75"
+        app:donut_text_size="70sp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1.0"
+        android:text="@string/submit_sending"
+        android:textColor="@color/mainGreen"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/BtnGreen"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_red"
+        android:text="@string/cancel" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:hint="Search by Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="Search by Name"
+                android:paddingLeft="50dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_mic"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp">
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:fillColor="@color/mainGreen"
+                    app:pageColor="#c2cdd9"
+                    app:radius="5dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/temp_sale_new"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

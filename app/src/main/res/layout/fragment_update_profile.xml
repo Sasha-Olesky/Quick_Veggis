@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/profile_header"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/ProfileLabel"
+                android:text="@string/profile_zip" />
+
+            <EditText
+                android:id="@+id/edZipCode"
+                style="@style/ProfileValue" />
+
+            <TextView
+                style="@style/ProfileLabel"
+                android:text="@string/profile_ref_code" />
+
+            <EditText
+                android:id="@+id/edReferalCode"
+                style="@style/ProfileValue" />
+
+            <TextView
+                style="@style/ProfileLabel"
+                android:text="@string/profile_gender" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:text="@string/profile_male" />
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/profile_female" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/ProfileLabel"
+                android:text="@string/profile_birthday" />
+
+            <EditText
+                android:id="@+id/edBirthday"
+                style="@style/ProfileValue"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="14/03/2017" />
+
+            <TextView
+                style="@style/ProfileLabel"
+                android:text="@string/profile_shopping_count" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:text="1" />
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:layout_marginLeft="20dp"
+                    android:text="2" />
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:layout_marginLeft="20dp"
+                    android:text="3" />
+
+                <RadioButton
+                    style="@style/ProfileValue_Radio_Inline"
+                    android:layout_marginLeft="20dp"
+                    android:text="4+" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/ProfileLabel_Inline"
+                    android:text="@string/profile_app_that_apply" />
+
+                <include layout="@layout/multiple_options" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@color/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_1" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_2" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_3" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_4" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/ProfileLabel_Inline"
+                    android:text="@string/profile_shopping_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@color/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll2_1" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll2_2" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll2_3" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll2_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/ProfileLabel_Inline"
+                    android:text="@string/profile_food_preference" />
+
+                <include layout="@layout/multiple_options" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@color/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll3_1" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll3_2" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll3_3" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll3_4" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll3_5" />
+
+                <CheckBox
+                    style="@style/ProfileValue_Checkbox"
+                    android:text="@string/profile_poll1_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/ProfileLabel_Inline"
+                    android:text="@string/profile_enthnicity" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@color/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        style="@style/ProfileValue_Checkbox"
+                        android:text="@string/profile_enthnicity_hindu" />
+
+                    <RadioButton
+                        style="@style/ProfileValue_Checkbox"
+                        android:text="@string/profile_enthnicity_sikh" />
+
+                    <RadioButton
+                        style="@style/ProfileValue_Checkbox"
+                        android:text="@string/profile_enthnicity_christian" />
+
+                    <RadioButton
+                        style="@style/ProfileValue_Checkbox"
+                        android:text="@string/profile_enthnicity_Muslim" />
+
+                    <RadioButton
+                        style="@style/ProfileValue_Checkbox"
+                        android:text="@string/profile_enthnicity_other" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/BtnGreen"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/save" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/orderBG"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/EditOrder"
+            android:hint="@string/hint_bank_name"
+            android:singleLine="true"
+            android:id="@+id/edName" />
+
+        <EditText
+            style="@style/EditOrder"
+            android:hint="@string/hint_bank_branch"
+            android:singleLine="true"
+            android:id="@+id/edBankBranch"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/EditOrder"
+            android:hint="@string/hint_bank_delivery_address"
+            android:singleLine="true"
+            android:id="@+id/edDeliveryAddress"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditOrder"
+                android:hint="@string/hint_bank_zip"
+                android:id="@+id/edZip"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:layout_width="0dp" />
+
+            <EditText
+                style="@style/EditOrder"
+                android:hint="@string/hint_mobile"
+                android:id="@+id/edMobile"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:layout_weight="1.0"
+                android:layout_width="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="@string/bank_help"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        style="@style/BtnGreen"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/next" />
+</RelativeLayout>

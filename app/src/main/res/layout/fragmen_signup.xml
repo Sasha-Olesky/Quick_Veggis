@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="105dp"
+            android:gravity="center"
+            android:text="@string/create_new_account"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edFirstName"
+                style="@style/EditEmail"
+                android:layout_height="39dp"
+                android:layout_width="0dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_first_name"
+                android:password="true"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edLastName"
+                style="@style/EditEmail"
+                android:layout_height="39dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_last_name"
+                android:password="true"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edUsername"
+            style="@style/EditEmail"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_user_name"
+            android:password="true"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edEmailAddress"
+            style="@style/EditEmail"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email_address"
+            android:password="true"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            style="@style/EditEmail"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/hint_password"
+            android:password="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/sign_up_txt"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnFacebook"
+        style="@style/BtnLoginSocial"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/mainGreen">
+
+        <TextView
+            style="@style/BtnLoginSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_signup" />
+    </RelativeLayout>
+</RelativeLayout>
